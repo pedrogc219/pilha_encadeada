@@ -34,12 +34,9 @@ public class Pilha {
     public void imprimir() {
         if (topo != null) {
             Node proximo = topo;
-            while(true) {
+            while(proximo != null) {
                 System.out.print(proximo.getInfo()+" ");
                 proximo = proximo.getProximo();
-                if (proximo == null) {
-                    break;
-                }
             }
         } else {
             System.out.println("Pilha esta vazia.");
